@@ -1,4 +1,4 @@
-package com.gokhanmoral.stweaks.app;
+package com.privilege.prestigetweaks.app;
 
 public interface SyhValueChangedInterface {
 	void valueChanged();

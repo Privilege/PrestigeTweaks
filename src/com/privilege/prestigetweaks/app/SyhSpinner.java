@@ -1,9 +1,9 @@
-package com.gokhanmoral.stweaks.app;
+package com.privilege.prestigetweaks.app;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.gokhanmoral.stweaks.app.R;
+import com.privilege.prestigetweaks.app.R;
 
 import android.app.Activity;
 import android.content.Context;

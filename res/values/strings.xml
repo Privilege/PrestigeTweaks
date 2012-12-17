@@ -1,19 +1,19 @@
 <resources>
 
-    <string name="app_name">STweaks</string>
+    <string name="app_name">프레스티지 트윅</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">STweaks</string>
-    <string name="bottom_accept">Apply</string>
-    <string name="bottom_decline">Discard</string>
-    <string name="startmenu_initial">Unexpected error!</string>
-    <string name="startmenu_nokernelsupport">Sorry, no kernel support!</string>
-    <string name="donation_invite">Please donate to support!</string>
-    <string name="check_for_updates">Check For Updates</string>
-    <string name="flash_kernel">Flash Kernel</string>
-    <string name="paypal">PayPal</string>
-    <string name="coming_soon">Coming soon!</string>
-    <string name="reset_settings">Reset settings to default</string>
-    <string name="developer_info">Developed by Gokhan Moral.</string>
-    <string name="startmenu_no_root">No root access, or timeout!</string>
+    <string name="title_activity_main">프레스티지 트윅</string>
+    <string name="bottom_accept">확인</string>
+    <string name="bottom_decline">취소</string>
+    <string name="startmenu_initial">문제가 발생했습니다.</string>
+    <string name="startmenu_nokernelsupport">프레스티지 모드를 설치해주세요.</string>
+    <string name="donation_invite">프레스티지 모드를 사랑해주셔서 감사합니다!</string>
+    <string name="check_for_updates">속도를 갖춘 커널</string>
+    <string name="flash_kernel">스타일을 갖춘 롬</string>
+    <string name="letter">Letter for czKamuil</string>
+    <string name="coming_soon">프레스티지 모드</string>
+    <string name="reset_settings">개발자들이 권장하는 값으로 자동설정</string>
+    <string name="developer_info">Developed by 프리빌리지</string>
+    <string name="startmenu_no_root">루팅이 필요합니다.</string>
     
 </resources>

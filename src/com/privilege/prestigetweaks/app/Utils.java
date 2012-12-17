@@ -1,4 +1,4 @@
-package com.gokhanmoral.stweaks.app;
+package com.privilege.prestigetweaks.app;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

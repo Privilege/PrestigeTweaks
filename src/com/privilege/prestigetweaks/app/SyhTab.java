@@ -1,4 +1,4 @@
-package com.gokhanmoral.stweaks.app;
+package com.privilege.prestigetweaks.app;
 
 import java.util.ArrayList;
 import java.util.List;

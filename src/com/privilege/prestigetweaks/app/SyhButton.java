@@ -1,6 +1,6 @@
-package com.gokhanmoral.stweaks.app;
+package com.privilege.prestigetweaks.app;
 
-import com.gokhanmoral.stweaks.app.R;
+import com.privilege.prestigetweaks.app.R;
 
 import android.app.Activity;
 import android.view.LayoutInflater;

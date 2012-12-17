@@ -1,4 +1,4 @@
-package com.gokhanmoral.stweaks.app;
+package com.privilege.prestigetweaks.app;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -10,7 +10,7 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
-import com.gokhanmoral.stweaks.app.R;
+import com.privilege.prestigetweaks.app.R;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;

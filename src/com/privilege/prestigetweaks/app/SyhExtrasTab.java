@@ -1,6 +1,6 @@
-package com.gokhanmoral.stweaks.app;
+package com.privilege.prestigetweaks.app;
 
-import com.gokhanmoral.stweaks.app.R;
+import com.privilege.prestigetweaks.app.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -45,7 +45,7 @@ public class SyhExtrasTab extends SyhTab implements OnClickListener {
  		 button.setOnClickListener(this);
  		 final Button button2 = (Button) v.findViewById(R.id.FlashKernel);
  		 button2.setOnClickListener(this);
- 		 final ImageButton button3 = (ImageButton) v.findViewById(R.id.imageButtonPayPal);
+ 		 final ImageButton button3 = (ImageButton) v.findViewById(R.id.imageButtonLetter);
  		 button3.setOnClickListener(this);
      	 final Button button4 = (Button) v.findViewById(R.id.ResetSettings);
  		 button4.setOnClickListener(this);
@@ -77,8 +77,8 @@ public class SyhExtrasTab extends SyhTab implements OnClickListener {
            	Toast toast1 = Toast.makeText(mContext, R.string.coming_soon, Toast.LENGTH_LONG);
         	toast1.show();  
             break;
-        case R.id.imageButtonPayPal:
-        	mContext.startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N4VU6J7ASUS3G")));
+        case R.id.imageButtonLetter:
+        	mContext.startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.bluepremium.co.kr")));
         	break;
         case R.id.ResetSettings:
         	AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
