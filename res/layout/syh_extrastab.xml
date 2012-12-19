@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:typeface="serif"
         android:textColor="#ffffffff"
-        android:text="@string/check_for_updates"
+        android:text="@string/kernelwithspeed"
         />   
         
        	<Button 
@@ -53,13 +53,13 @@
         android:layout_height="wrap_content"
         android:typeface="serif"
         android:textColor="#ffffffff"
-        android:text="@string/flash_kernel"/>  
+        android:text="@string/romwithstyle"/>  
               
         <TextView
         android:id="@+id/textViewDonate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/donation_invite"
+        android:text="@string/thanksmessage"
         android:textColor="#FFFFFF"
         android:background="#AA000000"
         android:paddingTop="10dip"

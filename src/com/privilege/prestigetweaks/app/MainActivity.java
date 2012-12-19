@@ -36,8 +36,6 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-//TODO: check for updates (almost ready)
-//TODO: flash kernel/zip
 
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener, SyhValueChangedInterface, OnClickListener{
 	
@@ -66,7 +64,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 	private String valuesChanged = ""; 
 
 	private boolean getUserInterfaceConfigFromAssets() {
-		Log.i(LOG_TAG, "Siyah script NOT found! But testing is enabled, so continue...");
+		Log.i(LOG_TAG, "PrestigeMod script NOT found! But testing is enabled, so continue...");
 		Log.i(LOG_TAG, "Getting config xml from apk...");
 		Boolean isOk = false;
 		try 
@@ -83,10 +81,10 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 	}
 
 	private boolean getUserInterfaceConfigFromScript() {
-		Log.i(LOG_TAG, "Siyah script found.");
+		Log.i(LOG_TAG, "PrestigeMod script found.");
 		Log.i(LOG_TAG, "Getting config xml via script...");
 		Boolean isOk = false;
-		String response = Utils.executeRootCommandInThread("/res/uci.sh config");
+		String response = Utils.executeRootCommandInThread("/res/prestigetweaks.sh config");
 		if (response != null && !response.equals(""))
 		{
 			Log.i(LOG_TAG, "Config xml extracted from script!");				
@@ -105,8 +103,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
 	private boolean isKernelSupportOk() {
 		Boolean isOk = false;
-		Log.i(LOG_TAG, "Searching siyah script...");
-        File file = new File("/res/uci.sh");
+		Log.i(LOG_TAG, "Searching PrestigeMod script...");
+        File file = new File("/res/prestigetweaks.sh");
         if (file.exists())
         {
             Log.i(LOG_TAG, "Kernel script(s) found.");
@@ -388,7 +386,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
          	if (Utils.canRunRootCommandsInThread())
          	{
          		new LoadDynamicUI().execute();
-         		dialog = ProgressDialog.show(this, getResources().getText(R.string.app_name), "Loading! Please wait...", true);
+         		dialog = ProgressDialog.show(this, getResources().getText(R.string.app_name), "잠시만 기다려주세요" +
+         				" ^^", true);
          	}
          	else
          	{

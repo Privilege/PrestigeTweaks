@@ -7,11 +7,12 @@
     <string name="bottom_decline">취소</string>
     <string name="startmenu_initial">문제가 발생했습니다.</string>
     <string name="startmenu_nokernelsupport">프레스티지 모드를 설치해주세요.</string>
-    <string name="donation_invite">프레스티지 모드를 사랑해주셔서 감사합니다!</string>
-    <string name="check_for_updates">속도를 갖춘 커널</string>
-    <string name="flash_kernel">스타일을 갖춘 롬</string>
+    <string name="thanksmessage">프레스티지 모드를 사랑해주셔서 감사합니다!</string>
+    <string name="kernelwithspeed">속도를 갖춘 커널</string>
+    <string name="romwithstyle">스타일을 갖춘 롬</string>
     <string name="letter">Letter for czKamuil</string>
-    <string name="coming_soon">프레스티지 모드</string>
+    <string name="prestigemod">프레스티지 모드</string>
+    <string name="lechestyle">Extra Leche Style</string>
     <string name="reset_settings">개발자들이 권장하는 값으로 자동설정</string>
     <string name="developer_info">Developed by 프리빌리지</string>
     <string name="startmenu_no_root">루팅이 필요합니다.</string>

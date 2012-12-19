@@ -18,7 +18,7 @@ public abstract class SyhControl {
 	public String valueFromUser = "0";    	//user input to be applied to the kernel script (integer, float, "on"/"off"...)
 	public View view;
 	protected Boolean canGetValueFromScript = true;
-	protected String syh_command = "/res/uci.sh "; 
+	protected String syh_command = "/res/prestigetweaks.sh "; 
 
 	protected SyhValueChangedInterface vci; //interface to inform main activity about changed values
 	protected Activity activity;

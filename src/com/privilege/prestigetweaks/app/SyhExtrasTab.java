@@ -54,15 +54,15 @@ public class SyhExtrasTab extends SyhTab implements OnClickListener {
     	 tv2.setText("Kernel version: " + System.getProperty("os.version"));
 
     	 String s = "";
-    	 s += "\n Kernel Version: " + System.getProperty("os.version");
-    	 s += "\n ROM Version: " + android.os.Build.VERSION.INCREMENTAL;
-       	 s += "\n ROM API Level: " + android.os.Build.VERSION.SDK_INT;
-       	 s += "\n ROM Codename: " + android.os.Build.VERSION.CODENAME;
-       	 s += "\n ROM Release Version: " + android.os.Build.VERSION.RELEASE;
-       	 s += "\n Hardware Serial: " + android.os.Build.SERIAL;
-      	 s += "\n Radio Version: " + android.os.Build.getRadioVersion();
-      	 //s += "\n Device: " + android.os.Build.DEVICE;
-    	 //s += "\n Model (and Product): " + android.os.Build.MODEL + " ("+ android.os.Build.PRODUCT + ")";   
+    	 s += "\n 커널 버전: " + System.getProperty("os.version");
+    	 s += "\n ROM 버전: " + android.os.Build.VERSION.INCREMENTAL;
+       	 s += "\n ROM API 레벨: " + android.os.Build.VERSION.SDK_INT;
+       	 s += "\n ROM 코드 네임: " + android.os.Build.VERSION.CODENAME;
+       	 s += "\n ROM 릴리즈 버전: " + android.os.Build.VERSION.RELEASE;
+       	 s += "\n 하드웨어 시리얼 넘버: " + android.os.Build.SERIAL;
+      	 s += "\n 라디오 버전: " + android.os.Build.getRadioVersion();
+      	 s += "\n 디바이스명: " + android.os.Build.DEVICE;
+    	 s += "\n 모델명: " + android.os.Build.MODEL;   
     	 tv2.setText(s);
     	 		 
     	 
@@ -73,30 +73,32 @@ public class SyhExtrasTab extends SyhTab implements OnClickListener {
 	public void onClick(View v) {
 		switch(v.getId()) {
         case R.id.CheckForUpdates:
-        case R.id.FlashKernel:
-           	Toast toast1 = Toast.makeText(mContext, R.string.coming_soon, Toast.LENGTH_LONG);
+           	Toast toast1 = Toast.makeText(mContext, R.string.prestigemod, Toast.LENGTH_LONG);
         	toast1.show();  
             break;
+        case R.id.FlashKernel:
+           	Toast toast2 = Toast.makeText(mContext, R.string.lechestyle, Toast.LENGTH_LONG);
+        	toast2.show();  
+            break;
         case R.id.imageButtonLetter:
-        	mContext.startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.bluepremium.co.kr")));
+        	mContext.startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.youtube.com/watch?v=Vk1AJPieAm8&feature=youtube_gdata_player")));
         	break;
         case R.id.ResetSettings:
         	AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-        	builder.setMessage("All settings will be reset. You will have to relaunch the application.")
-        	       .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+        	builder.setMessage("개발자들이 권장하는 설정값으로 덮어씌우시겠습니까?")
+        	       .setPositiveButton("네", new DialogInterface.OnClickListener() {
         	           public void onClick(DialogInterface dialog, int id) {
         	               // Handle Ok
-        	           		Utils.executeRootCommandInThread("/res/uci.sh delete default");
+        	           		Utils.executeRootCommandInThread("/res/prestigetweaks.sh delete default");
         	           		System.exit(0);
         	           }
         	       })
-        	       .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+        	       .setNegativeButton("아니요", new DialogInterface.OnClickListener() {
         	           public void onClick(DialogInterface dialog, int id) {
         	               // Handle Cancel
         	           }
         	       })
-        	       .setTitle("Warning")
-        	       .setIcon(R.drawable.ic_launcher)
+        	       .setTitle("주의 메시지")
         	       .create();
         	builder.show();
 
