@@ -81,11 +81,11 @@ public class SyhExtrasTab extends SyhTab implements OnClickListener {
         	toast2.show();  
             break;
         case R.id.imageButtonLetter:
-        	mContext.startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.youtube.com/watch?v=Vk1AJPieAm8&feature=youtube_gdata_player")));
+        	mContext.startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("http://bluepremium.co.kr/174")));
         	break;
         case R.id.ResetSettings:
         	AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-        	builder.setMessage("개발자들이 권장하는 설정값으로 덮어씌우시겠습니까?")
+        	builder.setMessage("기본값으로 초기화 하시겠습니까?")
         	       .setPositiveButton("네", new DialogInterface.OnClickListener() {
         	           public void onClick(DialogInterface dialog, int id) {
         	               // Handle Ok

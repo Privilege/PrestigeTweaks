@@ -13,7 +13,7 @@
     <string name="letter">Letter for czKamuil</string>
     <string name="prestigemod">프레스티지 모드</string>
     <string name="lechestyle">Extra Leche Style</string>
-    <string name="reset_settings">개발자들이 권장하는 값으로 자동설정</string>
+    <string name="reset_settings">기본값으로 초기화</string>
     <string name="developer_info">Developed by 프리빌리지</string>
     <string name="startmenu_no_root">루팅이 필요합니다.</string>
     
